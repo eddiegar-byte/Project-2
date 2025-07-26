@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+html {
+   height: 100%;
+   background-color: chocolate;
+}
+
+body {
+   display: grid;
+   font-family: Tahoma, Geneva, sans-serif;
+   font-size: 14pt;
+   min-height: 100%;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: lightgrey;
+}
+
+body > header {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 150px 75px 75px;
+   text-indent: 10px;
+}
+
+body > header > h1 {
+   font-family: "Lucida Console", "Courier New", monospace;
+   font-size: 64px;
+   font-style: italic;
+   text-shadow: 2px 2px 5px black;
+   color: orange;
+   border-radius: 15px;
+   padding: 10px;
+}
+
+body > header > nav > ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   text-indent: 0px;
+   background-color: dimgrey;
+}
+
+body > header > nav > ul > li {
+   float: left;
+}
+
+body > header > nav > ul > li a {
+   display: inline-grid;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+nav > ul > li a:hover:not(.active) {
+   color: black;
+   background-color: darkorange;
+}
+
+body > section {
+   display: grid;
+   grid-template-columns: 75% 25%;
+   grid-template-rows: 15% 85%;
+   padding: 15px 60px 15px 20px;
+}
